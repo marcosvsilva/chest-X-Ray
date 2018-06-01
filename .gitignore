@@ -1,9 +1,13 @@
 # IDEs and editors
-/.idea
+.idea
 
 #Checkpoint
-/.ipynb_checkpoints
 .ipynb_checkpoints
+
+#DataSets
+DataSetBKP
+DataSet
+dataset.h5
 
 # System Files
 .DS_Store
