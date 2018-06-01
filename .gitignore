@@ -1,0 +1,10 @@
+# IDEs and editors
+/.idea
+
+#Checkpoint
+/.ipynb_checkpoints
+*.ipynb
+
+# System Files
+.DS_Store
+Thumbs.db
