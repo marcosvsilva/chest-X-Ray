@@ -3,7 +3,7 @@
 
 #Checkpoint
 /.ipynb_checkpoints
-*.ipynb
+.ipynb_checkpoints
 
 # System Files
 .DS_Store
