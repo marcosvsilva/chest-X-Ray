@@ -4,11 +4,19 @@
 #Checkpoint
 .ipynb_checkpoints
 
+#Images and execution logs
+*.png
+*.npy
+
+#Bats Augmentation DataSet
+*.bat
+
 #DataSets
 DataSetBKP
 DataSet
 dataset.h5
 DataSet2
+DataSet-VAL
 
 # System Files
 .DS_Store
