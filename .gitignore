@@ -12,11 +12,12 @@
 *.bat
 
 #DataSets
-DataSetBKP
 DataSet
+DataSetBKP
+DataSetBKPVAL
+
+#weights pre-trained networks
 dataset.h5
-DataSet2
-DataSet-VAL
 
 # System Files
 .DS_Store
