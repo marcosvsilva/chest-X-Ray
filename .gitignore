@@ -15,6 +15,7 @@
 DataSet
 DataSetBKP
 DataSetBKPVAL
+MNIST_data
 
 #weights pre-trained networks
 dataset.h5
