@@ -5,7 +5,7 @@ Created on Sat Apr 29 15:54:45 2017
 @author: www.deeplearningbrasil.com.br
 """
 
-# Rede Neural convolucional simples para o problema de reconhecimento de dígitos (MNIST)
+# Rede Neural convolucional simples para o problema de reconhecimento de dï¿½gitos (MNIST)
 import tensorflow as tf
 import random
 # import matplotlib.pyplot as plt
@@ -14,11 +14,11 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 tf.set_random_seed(777)  # reproducibility
 
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
+mnist = input_data.read_data_sets("MNIST/", one_hot=True)
 # Verifique o site https://www.tensorflow.org/get_started/mnist/beginners para
-# mais informações sobre o conjunto de dados
+# mais informaï¿½ï¿½es sobre o conjunto de dados
 
-# Parâmetros de aprendizagem
+# Parï¿½metros de aprendizagem
 taxa_aprendizado = 0.001
 quantidade_maxima_epocas = 15
 batch_size = 100
@@ -58,13 +58,13 @@ Tensor("MaxPool_1:0", shape=(?, 7, 7, 64), dtype=float32)
 Tensor("Reshape_1:0", shape=(?, 3136), dtype=float32)
 '''
 
-# Classificador - Camada Fully Connected entrada 7x7x64 -> 10 saídas
+# Classificador - Camada Fully Connected entrada 7x7x64 -> 10 saï¿½das
 W3 = tf.get_variable("W3", shape=[7 * 7 * 64, 10],
                      initializer=tf.contrib.layers.xavier_initializer())
 b = tf.Variable(tf.random_normal([10]))
 logits = tf.matmul(L2_flat, W3) + b
 
-# Define a função de custo e o método de otimização 
+# Define a funï¿½ï¿½o de custo e o mï¿½todo de otimizaï¿½ï¿½o 
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=Y))
 optimizer = tf.train.AdamOptimizer(learning_rate=taxa_aprendizado).minimize(cost)
 
@@ -94,8 +94,8 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 print('Taxa de acerto:', sess.run(accuracy, feed_dict={
       X: mnist.test.images, Y: mnist.test.labels}))
 
-# Obtém uma nova imagem e testa o modelo
+# Obtï¿½m uma nova imagem e testa o modelo
 r = random.randint(0, mnist.test.num_examples - 1)
 print("Classe real: ", sess.run(tf.argmax(mnist.test.labels[r:r + 1], 1)))
-print("Predição: ", sess.run(
+print("Prediï¿½ï¿½o: ", sess.run(
     tf.argmax(logits, 1), feed_dict={X: mnist.test.images[r:r + 1]}))
