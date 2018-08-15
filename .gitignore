@@ -11,15 +11,6 @@
 #Bats Augmentation DataSet
 *.bat
 
-#DataSets
-DataSet
-DataSetBKP
-DataSetBKPVAL
-MNIST_data
-
-#weights pre-trained networks
-dataset.h5
-
 # System Files
 .DS_Store
 Thumbs.db
