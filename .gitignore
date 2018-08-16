@@ -4,8 +4,7 @@
 #Checkpoint
 .ipynb_checkpoints
 
-#Images and execution logs
-*.png
+#Execution logs
 *.npy
 
 #Bats Augmentation DataSet
