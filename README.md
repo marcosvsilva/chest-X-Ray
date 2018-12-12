@@ -16,8 +16,8 @@ Chest X-ray images (anterior-posterior) were selected from retrospective cohorts
 For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert.
 
 ## Solution
-![Context](https://github.com/marcosvsilva/DeepLearning/blob/master/Docs/AccuracyCurve.png)
-![Context](https://github.com/marcosvsilva/DeepLearning/blob/master/Docs/LossCurve.png)
+![Context](https://github.com/marcosvsilva/DeepLearning/blob/master/docs/AccuracyCurve.png)
+![Context](https://github.com/marcosvsilva/DeepLearning/blob/master/docs/LossCurve.png)
 
 A deep neural network was implemented using the transfer learning resources, using the InceptionV3 network. The parameters used can be visualized in the implementation of the network architecture itself.
 
