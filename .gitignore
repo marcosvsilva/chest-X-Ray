@@ -1,8 +1,8 @@
 # IDEs and editors
-.idea
+.idea/*
 
 #Checkpoint
-.ipynb_checkpoints
+.ipynb_checkpoints/*
 
 #Execution logs
 *.npy
